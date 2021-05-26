@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="index.css">
+  <script defer src = 'index.js'></script>
+</head>
+<body>
+  <div class = 'front'>
+    <h2>Baseball Game</h2>
+   <button id ='start'>게임시작</button><br><br>
+   <div class = 'lan'>
+    <img id = 'kr' src="south-korea.png"> 
+    <img id = 'en' src="united-states.png">
+    <img id = 'uz' src="uzbekistan.png"></div>
+   <ol class = 'description'>
+     <div id = 'korean'>
+      <p><경기 규칙></p>
+      <li>게임시작 버튼을 누르면 세개의 숫자가 랜덤으로 생성되며 게임이 시작됩니다.</li>
+      <li>랜덤으로 생성된 숫자 각각을 위치와 함께 맞추는 것이 이 게임의 목표입니다. </li>
+      <li>숫자와 위치를 함께 맞춘다면 strike가 1점 올라가고 틀린 위치에 숫자만 맞춘다면 ball이 1점 올라갑니다.</li>
+      <li>점수판 아래에 있는 숫자버튼을 클릭해 추측한 입력하세요.</li>
+      <li>그럼 행운을 빕니다!</li>
+      <br>
+     </div>
+    <div id = 'english'>
+      <p><Game Rule></p>
+      <li>Press the 게임시작 button to generate three random numbers and start the game.</li>
+      <li>The goal of this game is to match each randomly generated number with its location.</li>
+      <li>If you match the numbers with the positions, strike point will be added by 1 point or if you match the numbers to the wrong places, ball point will be added by 1 point.</li>
+      <li>Hit the number buttons below the scoreboard to enter your guess.</li>
+      <li>Good luck!</li>
+    </div>
+    <div id="uzbekistan">
+      <p><O'yin qoidasi></p>
+      <li>Uchta tasodifiy sonni yaratish va o'yinni boshlash uchun 게임시작 tugmani bosing.</li>
+      <li>Ushbu o'yinning maqsadi tasodifiy hosil bo'lgan har bir raqamni joylashuvi bilan moslashtirishdir.</li>
+      <li>Agar siz raqamlarni pozitsiyalar bilan moslashtirsangiz, zarba nuqtasi 1 ballga yoki agar siz raqamlarni noto'g'ri joylarga moslashtirsangiz, ball ball 1 ballga qo'shiladi.</li>
+      <li>Taxminlaringizni kiritish uchun tablo taxtasi ostidagi raqamli tugmachalarni bosing.</li>
+      <li>omad!</li>
+    </div>
+  </ol>
+  </div>
+  <section>
+    <input readonly type="text" id = 'scoreboard'>
+  <div class="input-box">
+    <input readonly type = 'text' class="input" id="input"></input>
+    <div class="buttons">
+      <div class="leftPanel">
+        <div class="numbers" id = 'numbers1'>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+        </div>
+          <div class="numbers" id = 'numbers2'>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+          </div>
+          <div class="numbers" id = 'numbers3'>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+          </div>
+        </div>
+        <div class = 'bot'>
+        <div class="result" id="result">입력</div>
+        <div class = 'init'>R</div>
+      </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  
+</body>
+</html>

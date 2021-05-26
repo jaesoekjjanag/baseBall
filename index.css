@@ -1,0 +1,218 @@
+body {
+  width: 380px;
+  margin: 4% auto;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 5px;
+  font-size: 1.8rem;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  text-align: center;
+  background-color: ivory;
+}
+#uz,
+#kr,
+#en {
+  width: 20px;
+  height: 20px;
+}
+
+#uzbekistan,
+#english {
+  display: none;
+}
+
+section {
+  display: none;
+}
+
+.description {
+  border: 0.5px gray solid;
+  font-size: 1.4rem;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  list-style: none;
+}
+.description li {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+#start {
+  width: 200px;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.815);
+  background-color: #4d90fe;
+  font-weight: 550;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+#scoreboard {
+  width: 380px;
+  height: 130px;
+  margin-bottom: 100px;
+  border: 0.1px;
+  background-color: rgba(231, 198, 231, 0.884);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+#scoreboard:hover {
+  border: 0.1px solid rgba(173, 156, 173, 0.863);
+  -webkit-box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+#start:hover {
+  border: 1px solid #1857bb;
+  background-color: #307cf9;
+  -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.input-box {
+  padding: 40px;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #fff0e6;
+}
+
+.input {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 90px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 2rem;
+  transition: all 0.2s ease-in-out;
+  width: 300px;
+  margin-bottom: 25px;
+  background-color: #e8e1ebe3;
+}
+
+.input:hover {
+  border: 1px solid #bbb;
+  -webkit-box-shadow: inset 0px 1px 4px 0px #e2d1e8;
+  box-shadow: inset 0px 1px 4px 0px #e2d1e8;
+}
+
+.operators div {
+  display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 1px;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+
+  cursor: pointer;
+  background-color: #ddd;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.operators div:hover {
+  background-color: #ddd;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #aaa;
+}
+
+.leftPanel {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+}
+
+.numbers div {
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 85px;
+  text-align: center;
+  padding: 10px;
+  height: 75px;
+  margin-top: 15px;
+  cursor: pointer;
+  background-color: #fffef5;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.numbers div:hover {
+  background-color: #fde1add0;
+  -webkit-box-shadow: 0px 1px 4px 0px #fde1add0;
+  box-shadow: 0px 1px 4px 0px #fde1add0;
+  border-color: #bbb;
+}
+
+.numbers div:active {
+  font-weight: bold;
+}
+
+div.result {
+  font-size: 1.5rem;
+  display: inline-block;
+  border: 1px solid fde1add0;
+  border-radius: 5px;
+  width: 210px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 30px;
+  vertical-align: top;
+  cursor: pointer;
+  color: #fff;
+  background-color: #fde1add0;
+  transition: all 0.2s ease-in-out;
+}
+
+div.result:hover {
+  background-color: #fde1add0;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border-color: #e9d2a8bd;
+}
+
+div.result:active {
+  font-weight: bold;
+}
+
+.bot {
+  display: flex;
+  justify-content: space-between;
+}
+
+.init {
+  border: 0.8px solid #e6ffe7;
+  background-color: #e6ffe7;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  text-align: center;
+  display: inline-block;
+  margin-top: 35px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.init:hover {
+  border-color: #e6ffe7;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
